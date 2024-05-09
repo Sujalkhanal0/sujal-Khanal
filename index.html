@@ -1,365 +1,98 @@
-<!DOCTYPE html>
+
+
+    <!-- end-head -section -->
+    <!-- body-section -->
+    <section><!DOCTYPE html>
 <html>
 <head>
-
-	<link rel="shotcut icon" type="x-icon" href="Logo.jpg">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kaushan+Script&family=Pinyon+Script&display=swap" rel="stylesheet">
+	<title>streetfood.com</title>
+	<link rel="shotcut icon" type="x-icon" href="images/logo.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-	<title>AlishBlog.com</title>
-	<style type="text/css">
-		*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	background:;
-}
-html{
-	scroll-behavior: smooth;
-}
-body{
-	height: 200vh;
-}
-header{
-		display: flex;
-	height: 9vh;
-	justify-content: space-between;
-	align-items: center;
-	border-bottom: 1px solid black;
-}
-.section-1 h1{
-	margin-left: 40px;
-}
-.section-2 ul{
-	display: flex;
-	margin-right: 30px;
-	cursor: pointer;
-}
-.section-2 li{
-	list-style: none;
-	transition: .3s;
-}
-.section-2 li a{
-	color:black;
-	text-decoration: none;
-	margin:0px  30px;
-	position: relative;
 
-}
-.section-2 li a button{
-	border: none;
-	background: transparent;
-}
-.section-2 li a:before{
-	content: '';
-	position: absolute;
-	width: 0;
-	height: 2px;
-	bottom: -5px;
-	border-radius:5px 0px 5px 0px ;
-    transition: .3s ease-in-out;
-	background-color: black;
-
-}
-.section-2 li a:hover:before{
-	width: 100%;
-
-}
-.section-2 li:hover{
-	scale: 1.1;
-}
-.fist-side img{
-	width: 450px;
-	height: 500px;
-	margin-left: 190px;
-
-	
-
-}
-@keyframes slide{
-
-	0%{
-		transform: translateX(30px);
-	}
-	100%{
-		transform: translateX(-30px);
-	}
-}
-.fist-side{
-	display: flex;
-		animation-name: slide;
-	animation-iteration-count: infinite;
-	animation-delay: ;
-	animation-direction: alternate;
-	animation-timing-function: ease-in;
-	animation-duration: 1.5s;
-	transition: .5s;
-	position: absolute;
-	z-index: -1;
-	height: 50vh;
-}
-section{
-	position: relative;
-
-}
-.left-side{
-	display: ;
-	position: relative;
-	left: 90px;
-	top: 100px;
-}
-
-.left-side h1{
-	font-weight: bold;
-  
-	
-
-  font-size: 50px;
-}
-.left-side h2{
-	font-size: 50px;
-	margin-left: 16px;
-	margin-top: 10px;
-
-
-}
-.left-side h1 b{
-	color:#fbc531 ;
-		 font-family: "Kaushan Script", cursive;
-  font-weight: 400;
-  font-style: normal;
-
-}
-.left-side h1 span{
-	color: #44bd32;
-	  font-family: "Josefin Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: bold;
-  font-style: normal;
-}
-.left-side p{
-	 font-size: 30px;
-	 font-family: "Pinyon Script", cursive;
-  font-weight:bold;
-  font-style: normal;
-}
-.down{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-  position: relative;
-  top: 75vh;
-  opacity: 1;
-}
-.down p{
-	border-radius: 100px;
-	background: black;
-	height: 40px;
-	width: 3px;
-
-}
-.down span{
-	position: absolute;
-	top: 39px;
-	font-size: 50px;
-	animation-name: top;
-	animation-delay: .2s;
-	animation-iteration-count: infinite;
-	animation-duration: 1s;
-	animation-timing-function: ease;
-	animation-direction: alternate;
-
-}
-@keyframes top{
-	0%{
-		transform: translateY(-20px);
-	}
-	50%{
-		transform: translateY(0px);
-	}
-	100%{
-		transform: translateY(20px);
-	}
-}
-
-/*					second pge*/
-
-.second-page{
-	position: absolute;
-	top: 100vh;
-	height: 90vh;
-	width: 100%;
-}
-.second-page h1 {
-	display: flex;
-	justify-content: center;
-}
-.scroll span{
-	position: fixed;
-	right: 32px;
-	bottom :12px;
-	height: 50px;
-	width: 50px;
-	border-radius: 20px;
-	transition: all .4s;
-	
-	background:#3498db ;
-	color: #fff;
-	display: flex;
-	text-decoration: none;
-	justify-content: center;
-	align-items: center;
-	pointer-events: none;
-	opacity: 0;
-	
-}
-.scroll span{
-	font-size: 40px;
-}
-
-.scroll span.active{
-	opacity: 1;
-	pointer-events: auto;
-}
-.down.remove{
-	opacity: 0;
-}
-.container-second{
-	display: flex;
-	justify-content: space-evenly;
-	margin-left: 200px;
-	height: 80vh;
-	
-	align-items: center;
-
-}
-.container img{
-	height: 300px;
-	width: 300px;
-}
-.container h1{
-	position: relative;
-}
-.container-second p{
-	padding: 10px 170px ;
-	margin: 10px;
-	font-weight: bold;
-	font-size: 18px;
-	text-align: center;
-	letter-spacing: 1.5px;
-}
-
-
-	</style>
 </head>
 <body>
-		 <a href="#" class="scroll">
-		<span class="material-symbols-outlined">
+	<script type="text/javascript" src="app.js"></script>
+
+	<div class="uprow">
+		<a href="#" ><span  class="material-symbols-outlined get">
 expand_less
-</span>
-</a>
-	
-      <header>
-
-      	<div class="section-1">
-      		<h1>S)K</h1>
-      	</div> 
-      	<div class="section-2">
-      		<ul>
-      			<li><a href="#home">Home</a></li>
-      		<li><a href="#about">About</a></li>
-      			<li><a href="#blog">Blog</a></li>
-      			<li><a href="#contact"> <button>Contact</button> </a></li>
-      		</ul>
-      	</div>
-      </header>
-
- 
-      <!-- body---section -->
-
-
-  <section>
-    
-  	<div class="fist-side" id="home">
-  		<img src="https://png.pngtree.com/png-vector/20190613/ourmid/pngtree-web-development-illustration-modern-can-be-used-for-landing-pages-web-png-image_1496223.jpg">
-
-  		 <div class="left-side">
-  		 	<h1><b>Hi,</b>My name is<br><span> Sujal Khanal</span>.</h1>
-  		 	<br><p>I am a Websites developer.</p>
-  		 </div>
-  	</div>
-  </section>
-<!-- footer of first page -->
-
-<div class="down">
-	<p></p>
-	<span class="material-symbols-outlined">
-expand_more
-</span>
-</div>
-
-
-<!-- secondpage -->
-
-<div class="second-page" id="about">
-	
-
-	<div class="container">
-		<h1>About Me</h1>
-            <div class="container-second">
-              <img src="https://fiverr-res.cloudinary.com/t_gig_cards_web,q_auto,f_auto/gigs/215800763/original/fb51eb984381cec99b719c4ee7ae783b30412a46.png">
-
-              <p>
-              	HELLOW,  MY NAME IS<u> SUJAL KHANAL</u>. I AM FROM NEPAL KAPILVASTU. I AM STUDY IN GRADE 9. I AM 15 YEARS OLD. I AM A WEB DEVELOPER, <i>IT IS MY FIRST WEBSITE TO PUBLISH IN INTERNET</i>.
-              </p>
-              </div>
+</span></a>
 	</div>
+    <!-- head-section -->
+    <header>
+    	<div class="logo">
+    		<img src="images/logo.png">
+    		<h1>Street Food</h1>
+    		</div>
+    		<div class="nav">
+    			<ul>
+    				<li><a href="index.html">Home</a></li>
+    				<li><a href="about.html">About us</a></li>
+    				<li><a href="">Contact</a></li>
+    				
+    			</ul>
+    		</div>
+    	
+    </header>
+    	   <div class="first">
+    	<h1>Introduction to <span>Nepalese</span> Street Food</h1><br>
+
+    	<p><b>Nepal</b>, nestled in the heart of the Himalayas, is not only renowned for its breathtaking landscapes and rich cultural heritage but also for its vibrant street food scene. Nepalese street food is a delightful fusion of flavors, drawing inspiration from the diverse ethnic groups, landscapes, and culinary traditions that define this enchanting country.
+
+From the bustling streets of Kathmandu to the serene lakeside towns of Pokhara, the aroma of spices and sizzling griddles beckons locals and travelers alike to embark on a gastronomic journey through Nepal's culinary landscape. Nepalese street food isn't just about satisfying hunger; it's an immersive experience that tantalizes the senses and offers a glimpse into the soul of the nation.</p>
 </div>
+              <div class="arrow">
+              	   <p>Read more information about stret food.</p>
+              	   <div class="line">
+              	   	<span class="material-symbols-outlined">
+arrow_downward
+</span>
+              	   </div>
+              </div>
+    </section>
 
+    <!-- -close homepage -->
 
+    <div class="second-page">
 
+    	<h1>Street Foods</h1>
+    	<div class="type">
+    		<h5>Top four best street food</h5>
+    	</div>
+    	<div class="boxes">
+    		<div class="box1 box">
+    			<a href="momo.html">
+    			<img src="images/momo.jpg">
+    		</a>
+    			<div class="info">
+    				<h4>MOMO</h4>
+    			</div>
+    		</div>
+    		<div class="box2 box">
+    			<img src="images/chaumin.jpg">
+    			<div class="info">
+    				<h4>CHAUMIN</h4>
+    			</div>
+    		</div>
+    		<div class="box3 box">
+    			<img src="images/samosa.jpg">
+    			<div class="info">
+    				<h4>SAMOSA</h4>
+    			</div>
+    		</div>
+    		<div class="box4 box">
+    			<a href="">
+    			<img src="images/chatpate.jpg">
+    		</a>
+    			<div class="info">
+    				<h4>CHATPATE</h4>
+    			</div>
+    		</div>
+    	</div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- --script tag-- -->
-  <script type="text/javascript" >
-const topbtn = document.querySelector('span');
-window.addEventListener("scroll",()=>{
-   if (pageYOffset > 100){
-   	topbtn.classList.add('active');
-   }else{
-   	topbtn.classList.remove('active')
-   		
-   }
-})
-
-const removebtn = document.querySelector('.down');
-window.addEventListener('scroll',()=>{
-	if (pageYOffset>300) {
-		removebtn.classList.add('remove');
-	} else {
-		removebtn.classList.remove('remove');
-	}
-});
-  </script>
 </body>
-
 </html>
